@@ -6,7 +6,7 @@ namespace DocAttributes
     [Summary("Describes what version that a particular method, field or class was added.")]
     public class AvailableSinceAttribute: Attribute
     {
-        private string Version { get; set; }
+        public string Version { get; private set; }
         public AvailableSinceAttribute(string version)
         {
             Version = version;

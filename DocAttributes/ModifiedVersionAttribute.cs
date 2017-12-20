@@ -12,7 +12,7 @@ namespace DocAttributes
     [AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = true)]
     public class ModifiedVersionAttribute : Attribute
     {
-        public string Version { get; protected set; }
+        public string Version { get; private set; }
 
         public ModifiedVersionAttribute(string version)
         {

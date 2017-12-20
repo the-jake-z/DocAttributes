@@ -5,7 +5,7 @@ namespace DocAttributes.Targets
 {
     public class AssemblyTarget : Target
     {
-        public ICollection<TypeTarget> Types { get; protected set; }
+        public ICollection<TypeTarget> Types { get; protected internal set; }
         
         public AssemblyTarget(Assembly assembly)
         {
