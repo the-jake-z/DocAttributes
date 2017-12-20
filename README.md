@@ -16,7 +16,7 @@ several types of documentation.
 
 ## Example
 
-```charp
+```csharp
 using System;
 using DocAttributes;
 using DocAttributes.Targets;
