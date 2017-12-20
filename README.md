@@ -16,7 +16,7 @@ several types of documentation.
 
 ## Example
 
-```charp
+```csharp
 using System;
 using DocAttributes;
 using DocAttributes.Targets;
@@ -47,3 +47,35 @@ Will write the following to the console:
     "Summary": "This is an example class"
 }
 ```
+
+## Available Attributes
+
+### AvailableSince
+
+|Targets                     |Inheritable|Allows Multiple|
+|----------------------------|-----------|---------------|
+|All                         |True       |False          |
+
+### ModifiedVersion
+
+|Targets                     |Inheritable|Allows Multiple|
+|----------------------------|-----------|---------------|
+|All                         |True       |True           |
+
+### MustSet
+
+|Targets                     |Inheritable|Allows Multiple|
+|----------------------------|-----------|---------------|
+|Property, Field, Event      |True       |True           |
+
+### SeeAlso
+
+|Targets                     |Inheritable|Allows Multiple|
+|----------------------------|-----------|---------------|
+|All                         |False      |False          |
+
+### Summary
+
+|Targets                     |Inheritable|Allows Multiple|
+|----------------------------|-----------|---------------|
+|All                         |False      |False          |
