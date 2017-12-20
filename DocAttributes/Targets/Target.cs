@@ -10,11 +10,11 @@ namespace DocAttributes.Targets
     {
         [Summary("Specified the name of the target.",
             "For classes/structs, it is the fully qualified name")]
-        public string Name { get; protected set; }
-        public string Summary { get; protected set; }
-        public Type[] Related { get; protected set; }
-        public string AvailableVersion { get; protected set; }
-        public bool Obsolete { get; protected set; }
+        public string Name { get; protected internal set; }
+        public string Summary { get; protected internal set; }
+        public Type[] Related { get; protected internal set; }
+        public string AvailableVersion { get; protected internal set; }
+        public bool Obsolete { get; protected internal set; }
 
         protected Target(MemberInfo memberInfo)
         {

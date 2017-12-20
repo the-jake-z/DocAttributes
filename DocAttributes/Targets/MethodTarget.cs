@@ -7,12 +7,14 @@ namespace DocAttributes.Targets
     [Summary("Used for constructors, methods, and delegates")]
     public class MethodTarget : Target
     {
-        public Type ReturnType { get; protected set; }
-        public ICollection<FieldTarget> Parameters;
+        public Type ReturnType { get; protected internal set; }
+        public ICollection<FieldTarget> Parameters { get; protected internal set; }
+        public string ReturnDescription { get; protected internal set; }
 
         public MethodTarget(MethodInfo methodInfo) : base(methodInfo)
         {
             ReturnType = methodInfo.ReturnType;
+            ReturnDescription = methodInfo.GetCustomAttribute<ReturnsAttribute>()?.Description ?? string.Empty;
             AddAllParameters(methodInfo.GetParameters());
         }
 

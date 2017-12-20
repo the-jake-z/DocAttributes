@@ -6,8 +6,8 @@ namespace DocAttributes.Targets
     [Summary("Used for modules, classes, structs, enums, and interfaces")]
     public class TypeTarget : Target
     {
-        public ICollection<MethodTarget> Methods { get; protected set; }
-        public ICollection<FieldTarget> Fields { get; protected set; }
+        public ICollection<MethodTarget> Methods { get; protected internal set; }
+        public ICollection<FieldTarget> Fields { get; protected internal set; }
         [MustSet]
         public Type Parent { get; protected set; }
 
