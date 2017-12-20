@@ -1,5 +1,7 @@
 # DocAttributes
 
+[![Build status](https://ci.appveyor.com/api/projects/status/xemthlllskj6adu2/branch/master?svg=true)](https://ci.appveyor.com/project/jzarob/docattributes/branch/master)
+
 In .NET, developers have typically used C#/VB XML comments to document their code. Although this has been the most
 widely used way for developers to document their code there are inherent challenges with the code being documented
 strictly in comments:
