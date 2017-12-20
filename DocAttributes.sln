@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 15.00
+Microsoft Visual Studio Solution File, Format Version 14.00
 # Visual Studio 2017
-VisualStudioVersion = 15.0.0.0
+VisualStudioVersion = 14.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocAttributes", "DocAttributes/DocAttributes.csproj", "{9B2F6B2C-2133-4878-9B11-4CF97D014740}"
 EndProject

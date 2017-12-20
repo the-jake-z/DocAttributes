@@ -2,7 +2,8 @@
 
 namespace DocAttributes
 {
-    [AttributeUsage(AttributeTargets.All)]
+    [AttributeUsage(AttributeTargets.All, Inherited = true)]
+    [Summary("Describes what version that a particular method, field or class was added.")]
     public class AvailableSinceAttribute: Attribute
     {
         private string Version { get; set; }

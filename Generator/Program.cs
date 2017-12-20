@@ -11,13 +11,17 @@ namespace Generator
         public static void Main(string[] args)
         {
             TypeTarget t1 = new TypeTarget(typeof(TypeTarget));
+
+            AssemblyTarget a1 = new AssemblyTarget(typeof(TypeTarget).Assembly);
+
             var jsonSerializerSettings = new JsonSerializerSettings()
             {
                 Formatting = Formatting.Indented,
                 NullValueHandling = NullValueHandling.Ignore
             };
             
-            Console.WriteLine(JsonConvert.SerializeObject(t1, jsonSerializerSettings));
+            Console.WriteLine(JsonConvert.SerializeObject(a1, jsonSerializerSettings));
+            Console.ReadKey();
         }
     }
 }

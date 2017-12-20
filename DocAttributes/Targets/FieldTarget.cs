@@ -7,7 +7,7 @@ namespace DocAttributes.Targets
     public class FieldTarget : Target
     {
         public Type Type { get; protected set; }
-        public bool MustSet { get; protected set; }
+        public bool MustSet { get; internal set; }
         public FieldTarget(PropertyInfo propertyInfo) : base(propertyInfo)
         {
             Type = propertyInfo.PropertyType;

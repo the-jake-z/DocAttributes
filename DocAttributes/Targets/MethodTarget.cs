@@ -33,7 +33,10 @@ namespace DocAttributes.Targets
         {
             foreach (var parameter in parameters)
             {
-                AddParameter(new FieldTarget(parameter));
+                AddParameter(new FieldTarget(parameter)
+                {
+                    MustSet = !parameter.IsOptional,
+                });
             }
         }
     }
