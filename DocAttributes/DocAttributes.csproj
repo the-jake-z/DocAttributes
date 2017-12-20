@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AvailableSinceAttribute.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="ModifiedVersionAttribute.cs" />
     <Compile Include="MustSetAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeeAlsoAttribute.cs" />
