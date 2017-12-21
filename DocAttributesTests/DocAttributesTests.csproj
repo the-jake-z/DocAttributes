@@ -42,6 +42,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Targets\MethodTargetTest.cs" />
     <Compile Include="Targets\TargetTesterClass.cs" />
     <Compile Include="Targets\TypeTargetTest.cs" />
     <Compile Include="Tests.cs" />
