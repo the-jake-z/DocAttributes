@@ -14,9 +14,9 @@ Additionally, since the data is stored in comments in the code, the documentatio
 parameters and other targets is not available at runtime. Creating API's that are self documenting becomes impossible
 if you're using XML comments.
 
-However, by moving the metadata stored in the XML comments into attributes, we can make the data associated with the
-targets available at runtime. Additionally, we can develop an easy to understand hierarchy that takes a more object
-oriented approach to representing the metadata for the targets we are trying to document.
+However, by moving the metadata stored in the XML comments into attributes, we can make target metadata available at 
+runtime by utilizing reflection. Additionally, we can develop an easy to understand hierarchy that takes a more object
+oriented approach to representing the target metadata.
 
 Other glaring omissions from the XML comments are types, which aren't included. Although type information may not be
 necessary when you have the DLL, when providing a documentation service, the type information is crucial to allow
