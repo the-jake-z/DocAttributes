@@ -2,17 +2,25 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/xemthlllskj6adu2/branch/master?svg=true)](https://ci.appveyor.com/project/jzarob/docattributes/branch/master)
 
-In .NET, developers have typically used C#/VB XML comments to document their code. Although this has been the most
-widely used way for developers to document their code there are inherent challenges with the code being documented
-strictly in comments:
+In .NET, developers have typically used C#/VB XML comments to document their code. This is the officially supported way
+to add additional content to IntelliSense.
 
-1. Unable to access the documentation during runtime
-2. Output of the `/doc` argument is a flat list of targets
-3. Output of the `/doc` argument doesn't include type information for parameters
+The XML comments that have been used are parsed at build time and dropped into an XML file of the output directory.
+The XML file contains a myriad of targets with no hierarchy. It also dumps information about the entire assembly,
+leading to massive XML files that can be megabytes in size. The only distinguishing marks for types,
+methods, properties inside of the XML contents are the name prefixes whitch start with T:, M:, and P: respectively.
 
-DocAttributes is designed to solve these problems by providing a simple set of attributes that can be applied to a
-variety of targets. These attributes are then reflected in a simple object structure that can be used to generate
-several types of documentation.
+Additionally, since the data is stored in comments in the code, the documentation for available types, methods,
+parameters and other targets is not available at runtime. Creating API's that are self documenting becomes impossible
+if you're using XML comments.
+
+However, by moving the metadata stored in the XML comments into attributes, we can make target metadata available at 
+runtime by utilizing reflection. Additionally, we can develop an easy to understand hierarchy that takes a more object
+oriented approach to representing the target metadata.
+
+Other glaring omissions from the XML comments are types, which aren't included. Although type information may not be
+necessary when you have the DLL, when providing a documentation service, the type information is crucial to allow
+developers to better understanding the API.
 
 ## Example
 
@@ -47,6 +55,8 @@ Will write the following to the console:
     "Summary": "This is an example class"
 }
 ```
+
+An example documentation structure for the DocAttributes library itself is available [on GitHub](https://github.com/jzarob/DocAttributes/blob/master/Example/DocAttributes.json)
 
 ## Available Attributes
 
