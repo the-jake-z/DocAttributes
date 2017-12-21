@@ -1,0 +1,684 @@
+{
+  "Types": [
+    {
+      "Methods": [
+        {
+          "ReturnType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "ReturnDescription": "The version the target of this attribute was introduced in.",
+          "Generics": [],
+          "Name": "ToString",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Fields": [
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Version",
+          "Summary": "The version the target of this attribute was introduced in.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "TypeId",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Attribute, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.AvailableSinceAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Describes what version that a particular method, field or class was added.",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Parameters": [
+            {
+              "Type": "System.Reflection.MethodInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "MustSet": true,
+              "Name": "methodInfo",
+              "Obsolete": false
+            }
+          ],
+          "ReturnDescription": "",
+          "Generics": [],
+          "Name": "IsPropertyAccessor",
+          "Summary": "Determines if a given MethodInfo is also a property accessor.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Fields": [],
+      "Generics": [],
+      "Parent": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.Extensions, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Extension methods used for various types throughout the DocAttributes assembly.",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Version",
+          "Summary": "The version this item was modified.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "TypeId",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Attribute, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.ModifiedVersionAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Allows for programmers to keep track of which version a specific\ntarget was modified.",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "TypeId",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Attribute, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.MustSetAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Marks whether a field target needs to be set in order to process normal operations.",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Description",
+          "Summary": "Description of the target's returned by the method target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "TypeId",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Attribute, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.ReturnsAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Used to describe the meaning of the object returned by calling this method.",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "System.Type[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Related",
+          "Summary": "Collection of types that are related to this particular target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "TypeId",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Attribute, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.SeeAlsoAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Allows specifying related types that could be of interest to programmers.",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [
+        {
+          "ReturnType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "ReturnDescription": "",
+          "Generics": [],
+          "Name": "ToString",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Fields": [
+        {
+          "Type": "System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "SummaryLines",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "TypeId",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Attribute, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.SummaryAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "This is an example method that can be documents\nIt accepts a variable number of parameters to join them with new lines.",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "System.Collections.Generic.ICollection`1[[DocAttributes.Targets.TypeTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Types",
+          "Summary": "The list of type documentation contained in this assembly.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Name",
+          "Summary": "Specified the name of the target.\nFor classes/structs, it is the fully qualified name",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Summary",
+          "Summary": "Describes this particular target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Type[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Related",
+          "Summary": "Describes classes and types that are related to the target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "AvailableVersion",
+          "Summary": "Specifies which version this target became available.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "ModifiedVersions",
+          "Summary": "Specifies which version this target was modified.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Obsolete",
+          "Summary": "Specifies if this target is obsolete.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "DocAttributes.Targets.Target, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Name": "DocAttributes.Targets.AssemblyTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Used to represent entire assemblies and their targets for documentation.",
+      "Related": [
+        "System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      ],
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Type",
+          "Summary": "The type associated with this field.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "MustSet",
+          "Summary": "Whether or not this member must be set in order for normal operation.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Name",
+          "Summary": "Specified the name of the target.\nFor classes/structs, it is the fully qualified name",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Summary",
+          "Summary": "Describes this particular target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Type[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Related",
+          "Summary": "Describes classes and types that are related to the target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "AvailableVersion",
+          "Summary": "Specifies which version this target became available.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "ModifiedVersions",
+          "Summary": "Specifies which version this target was modified.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Obsolete",
+          "Summary": "Specifies if this target is obsolete.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "DocAttributes.Targets.Target, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Name": "DocAttributes.Targets.FieldTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Used for field, events, properties, and parameters",
+      "Related": [
+        "System.Reflection.ParameterInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "System.Reflection.EventInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "System.Reflection.FieldInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "System.Reflection.PropertyInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      ],
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [
+        {
+          "ReturnType": "System.Void, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Parameters": [
+            {
+              "Type": "DocAttributes.Targets.FieldTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "MustSet": true,
+              "Name": "fieldTarget",
+              "Obsolete": false
+            }
+          ],
+          "ReturnDescription": "",
+          "Generics": [],
+          "Name": "AddParameter",
+          "Summary": "Adds a parameter to the field target",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Fields": [
+        {
+          "Type": "System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "ReturnType",
+          "Summary": "Used to designate the type of the object returned by calling attributed method.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Collections.Generic.ICollection`1[[DocAttributes.Targets.FieldTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Parameters",
+          "Summary": "The parameters used by attributed method and their descriptions.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "ReturnDescription",
+          "Summary": "Used to designate the meaning of the value returned by calling attributed method.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Collections.Generic.ICollection`1[[DocAttributes.Targets.FieldTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Generics",
+          "Summary": "Used to describe the generic arguments of this method.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Name",
+          "Summary": "Specified the name of the target.\nFor classes/structs, it is the fully qualified name",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Summary",
+          "Summary": "Describes this particular target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Type[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Related",
+          "Summary": "Describes classes and types that are related to the target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "AvailableVersion",
+          "Summary": "Specifies which version this target became available.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "ModifiedVersions",
+          "Summary": "Specifies which version this target was modified.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Obsolete",
+          "Summary": "Specifies if this target is obsolete.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "DocAttributes.Targets.Target, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Name": "DocAttributes.Targets.MethodTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Used for constructors, methods, and delegates",
+      "Related": [
+        "System.Reflection.ConstructorInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "System.Reflection.MethodInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      ],
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Name",
+          "Summary": "Specified the name of the target.\nFor classes/structs, it is the fully qualified name",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Summary",
+          "Summary": "Describes this particular target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Type[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Related",
+          "Summary": "Describes classes and types that are related to the target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "AvailableVersion",
+          "Summary": "Specifies which version this target became available.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "ModifiedVersions",
+          "Summary": "Specifies which version this target was modified.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Obsolete",
+          "Summary": "Specifies if this target is obsolete.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.Targets.Target, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "The base class that all targets inherit from. This means that all targets could have\nthese properties",
+      "Related": [
+        "DocAttributes.Targets.TypeTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "DocAttributes.Targets.MethodTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+      ],
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [
+        {
+          "ReturnType": "System.Void, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Parameters": [
+            {
+              "Type": "DocAttributes.Targets.MethodTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "MustSet": true,
+              "Name": "mt",
+              "Obsolete": false
+            }
+          ],
+          "ReturnDescription": "",
+          "Generics": [],
+          "Name": "AddMethod",
+          "Summary": "Adds a method target to attributed type target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "ReturnType": "System.Void, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Parameters": [
+            {
+              "Type": "DocAttributes.Targets.FieldTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "MustSet": true,
+              "Name": "ft",
+              "Obsolete": false
+            }
+          ],
+          "ReturnDescription": "",
+          "Generics": [],
+          "Name": "AddField",
+          "Summary": "Adds a field to attributed type target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Fields": [
+        {
+          "Type": "System.Collections.Generic.ICollection`1[[DocAttributes.Targets.MethodTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Methods",
+          "Summary": "The methods that are offered by this particular target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Collections.Generic.ICollection`1[[DocAttributes.Targets.FieldTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Fields",
+          "Summary": "Public fields and properties that are available for target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Collections.Generic.ICollection`1[[DocAttributes.Targets.FieldTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Generics",
+          "Summary": "Generic type parameters available for this target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": true,
+          "Name": "Parent",
+          "Summary": "If a derived class, the type of the parent.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Name",
+          "Summary": "Specified the name of the target.\nFor classes/structs, it is the fully qualified name",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Summary",
+          "Summary": "Describes this particular target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Type[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Related",
+          "Summary": "Describes classes and types that are related to the target.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "AvailableVersion",
+          "Summary": "Specifies which version this target became available.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "ModifiedVersions",
+          "Summary": "Specifies which version this target was modified.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "Obsolete",
+          "Summary": "Specifies if this target is obsolete.",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "DocAttributes.Targets.Target, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Name": "DocAttributes.Targets.TypeTarget, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Summary": "Used for modules, classes, structs, enums, and interfaces",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    },
+    {
+      "Methods": [],
+      "Fields": [
+        {
+          "Type": "DocAttributes.Targets.Target+<>c, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "MustSet": false,
+          "Name": "<>9",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Func`2[[DocAttributes.ModifiedVersionAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "<>9__24_0",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        },
+        {
+          "Type": "System.Func`2[[DocAttributes.ModifiedVersionAttribute, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "MustSet": false,
+          "Name": "<>9__25_0",
+          "ModifiedVersions": [],
+          "Obsolete": false
+        }
+      ],
+      "Generics": [],
+      "Parent": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "Name": "DocAttributes.Targets.Target+<>c, DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ModifiedVersions": [],
+      "Obsolete": false
+    }
+  ],
+  "Name": "DocAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "Summary": "Used to generate documentation for the assembly",
+  "Obsolete": false
+}

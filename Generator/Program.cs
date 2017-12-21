@@ -20,7 +20,7 @@ namespace Generator
                 NullValueHandling = NullValueHandling.Ignore
             };
             
-            Console.WriteLine(JsonConvert.SerializeObject(t1, jsonSerializerSettings));
+            Console.WriteLine(JsonConvert.SerializeObject(a1, jsonSerializerSettings));
             Console.ReadKey();
         }
     }
