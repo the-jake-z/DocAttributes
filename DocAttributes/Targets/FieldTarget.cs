@@ -21,7 +21,7 @@ namespace DocAttributes.Targets
         
         [Summary("Constructs a FieldTarget based on ParameterInfo")]
         [SeeAlso(typeof(MethodTarget))]
-        public FieldTarget(ParameterInfo parameterInfo) : base()
+        public FieldTarget(ParameterInfo parameterInfo) : base(parameterInfo)
         {
             Type = parameterInfo.ParameterType;
             Name = parameterInfo.Name;

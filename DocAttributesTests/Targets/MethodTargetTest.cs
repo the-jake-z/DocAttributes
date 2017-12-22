@@ -52,5 +52,43 @@ namespace DocAttributesTests.Targets
         {
             Assert.AreEqual(typeof(string), methodTarget.ReturnType);
         }
+
+        [Test]
+        public void methodTarget_ShouldHaveSomeGenerics()
+        {
+            Assert.AreNotEqual(0, methodTarget.Generics.Count);
+            Assert.AreEqual(2, methodTarget.Generics.Count);
+        }
+
+        [Test]
+        public void methodTarget_GenericArguments_ShouldHaveSummaryValues()
+        {
+            Assert.IsNotNull(methodTarget.Generics.ElementAt(0));
+            Assert.IsNotNull(methodTarget.Generics.ElementAt(1));
+            Assert.AreEqual("g1", methodTarget.Generics.ElementAt(0).Summary);
+            Assert.AreEqual("g2", methodTarget.Generics.ElementAt(1).Summary);
+        }
+
+        [Test]
+        public void methodTarget_ShouldHaveSomeParameters()
+        {
+            Assert.AreNotEqual(0, methodTarget.Parameters.Count);
+            Assert.AreEqual(2, methodTarget.Parameters.Count);
+        }
+
+        [Test]
+        public void methodTarget_Parameters_ShouldHaveSummaryValues()
+        {
+            Assert.IsNotNull(methodTarget.Parameters.ElementAt(0));
+            Assert.IsNotNull(methodTarget.Parameters.ElementAt(1));
+            Assert.AreEqual("p1", methodTarget.Parameters.ElementAt(0).Summary);
+            Assert.AreEqual("p2", methodTarget.Parameters.ElementAt(1).Summary);
+        }
+
+        [Test]
+        public void methodTarget_AvailalabeSince_ShouldHaveCorrectValue()
+        {
+            Assert.AreEqual("as", methodTarget.AvailableVersion);
+        }
     }
 }

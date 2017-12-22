@@ -23,9 +23,9 @@ namespace DocAttributesTests.Targets
 
         [Summary(METHOD_TARGET_SUMMARY)]
         [Returns(METHOD_TARGET_RETURNS)]
-        [AvailableSince("1.0")]
-        public string SomeGenericMethod<[Summary("The first type")] T1,
-            [Summary("The second type parameter")] T2>([Summary("The first parameter")] T1 obj1, [Summary("The second parameter")] T2 obj2)
+        [AvailableSince("as")]
+        public string SomeGenericMethod<[Summary("g1")] T1,
+            [Summary("g2")] T2>([Summary("p1")] T1 obj1, [Summary("p2")] T2 obj2)
         {
             return string.Empty;
         }
