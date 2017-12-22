@@ -35,11 +35,14 @@ namespace AttributeExample
     [Summary("This class is an example class")]
     public class A { }
     
-    static void Main(string[] args) 
+    class Program
     {
-        var typeTarget = new TypeTarget(typeof(A));
-        
-        Console.WriteLine(JsonConvert.SerializeObject(typeTarget));
+        static void Main(string[] args) 
+        {
+            var typeTarget = new TypeTarget(typeof(A));
+            
+            Console.WriteLine(JsonConvert.SerializeObject(typeTarget));
+        }
     }
 }
 ```
