@@ -52,8 +52,16 @@ namespace DocAttributesTests.Targets
         {
             var typeTarget = new TypeTarget(typeof(TypeTargetTesterClass));
             
-            Assert.AreEqual(1, typeTarget.Methods.Count);
-            Assert.AreEqual(4, typeTarget.Fields.Count);
+            Assert.AreEqual(2, typeTarget.Methods.Count);
+            Assert.AreEqual(6, typeTarget.Fields.Count);
+        }
+
+        [Test]
+        public void targetTypeTester_summaryShouldHaveNoValue_ifAttributeNotProvided()
+        {
+            var typeTarget = new TypeTarget(typeof(TypeTargetTest));
+
+            Assert.IsNull(typeTarget.Summary);
         }
     }
 }
